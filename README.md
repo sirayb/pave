@@ -367,6 +367,34 @@ CATEGORY_SIGNATURES["my_category"] = ["keyword1", "keyword2", ...]
 
 ---
 
+## 🔧 Troubleshooting
+
+### Port 8000 Already in Use
+
+**Problem**: `error while attempting to bind on address ('127.0.0.1', 8000): [winerror 10048]`
+
+**Solution** (Windows PowerShell):
+```powershell
+Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | ForEach-Object {Stop-Process -Id $_.OwningProcess -Force}
+```
+
+Then retry:
+```bash
+python -m uvicorn pave.api:app --host 127.0.0.1 --port 8000
+```
+
+**Solution** (Linux/Mac):
+```bash
+lsof -i :8000 | grep LISTEN | awk '{print $2}' | xargs kill -9
+```
+
+Or use different port:
+```bash
+python -m uvicorn pave.api:app --host 127.0.0.1 --port 8001
+```
+
+---
+
 ## 📁 Project Structure
 
 ```
