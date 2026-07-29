@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 600 python train_mave_pretrain.py)"
+    ]
+  }
+}

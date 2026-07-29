@@ -1,0 +1,324 @@
+{
+  "Capacity": {
+    "attribute": "Capacity",
+    "total_gold": 19,
+    "generated": 15,
+    "correct": 12,
+    "missed": 7,
+    "false_positives": 3,
+    "recall": 0.631578947368421,
+    "precision": 0.8,
+    "candidates_per_gold": 0.7894736842105263,
+    "empty_result_ratio": 0.21052631578947367,
+    "missed_by_type": {
+      "not_in_title": [
+        {
+          "title": "539843-001 DL585 G6 Opteron 8431 2.4GHz, Price 539843-001\" 2.4GHz Wholesale 5398",
+          "gold": "16.0 GB",
+          "predicted": [],
+          "type": "not_in_title"
+        },
+        {
+          "title": "513778-B21 HP Smart Array P711m SAS Controller, Price 513778-B21\" New 513778-B21",
+          "gold": "6.0 GB",
+          "predicted": [],
+          "type": "not_in_title"
+        },
+        {
+          "title": "507772-S21 HP 1-TB 3G 7.2K 3.5 NHP SAT 5 Pack HP 507772-S21 Part# -507772-S21-5P",
+          "gold": "1000.0 GB",
+          "predicted": [
+            "1024GB"
+          ],
+          "type": "not_in_title"
+        },
+        {
+          "title": "519578-005 ML370 G6 QC Xeon E5530 2.4GHz",
+          "gold": "6.0 GB",
+          "predicted": [],
+          "type": "not_in_title"
+        },
+        {
+          "title": "ST31500541AS Seagate 1.5-TB 5.9K 3.5 3G SAT HDD",
+          "gold": "1500.0 GB",
+          "predicted": [
+            "1536GB"
+          ],
+          "type": "not_in_title"
+        },
+        {
+          "title": "257974-B21 HP 1024MB DDR SDRAM DIMM, New 257974-B21 DIMM Wholesale Price 257974-",
+          "gold": "1.024 GB",
+          "predicted": [
+            "1GB"
+          ],
+          "type": "not_in_title"
+        },
+        {
+          "title": "157305-B21 HP Storageworks TL891DLX",
+          "gold": "80.0 GB",
+          "predicted": [],
+          "type": "not_in_title"
+        }
+      ]
+    },
+    "fp_by_pattern": {
+      "alphanumeric": [
+        {
+          "title": "507772-S21 HP 1-TB 3G 7.2K 3.5 NHP SAT 5 Pack HP 507772-S21 Part# -507772-S21-5P",
+          "gold": "1000.0 GB",
+          "fp": "1024GB"
+        },
+        {
+          "title": "ST31500541AS Seagate 1.5-TB 5.9K 3.5 3G SAT HDD",
+          "gold": "1500.0 GB",
+          "fp": "1536GB"
+        },
+        {
+          "title": "257974-B21 HP 1024MB DDR SDRAM DIMM, New 257974-B21 DIMM Wholesale Price 257974-",
+          "gold": "1.024 GB",
+          "fp": "1GB"
+        }
+      ]
+    },
+    "sample_missed": [
+      {
+        "title": "539843-001 DL585 G6 Opteron 8431 2.4GHz, Price 539843-001\" 2.4GHz Wholesale 5398",
+        "gold": "16.0 GB",
+        "predicted": [],
+        "type": "not_in_title"
+      },
+      {
+        "title": "513778-B21 HP Smart Array P711m SAS Controller, Price 513778-B21\" New 513778-B21",
+        "gold": "6.0 GB",
+        "predicted": [],
+        "type": "not_in_title"
+      },
+      {
+        "title": "507772-S21 HP 1-TB 3G 7.2K 3.5 NHP SAT 5 Pack HP 507772-S21 Part# -507772-S21-5P",
+        "gold": "1000.0 GB",
+        "predicted": [
+          "1024GB"
+        ],
+        "type": "not_in_title"
+      },
+      {
+        "title": "519578-005 ML370 G6 QC Xeon E5530 2.4GHz",
+        "gold": "6.0 GB",
+        "predicted": [],
+        "type": "not_in_title"
+      },
+      {
+        "title": "ST31500541AS Seagate 1.5-TB 5.9K 3.5 3G SAT HDD",
+        "gold": "1500.0 GB",
+        "predicted": [
+          "1536GB"
+        ],
+        "type": "not_in_title"
+      }
+    ],
+    "sample_fp": [
+      {
+        "title": "507772-S21 HP 1-TB 3G 7.2K 3.5 NHP SAT 5 Pack HP 507772-S21 Part# -507772-S21-5P",
+        "gold": "1000.0 GB",
+        "fp": "1024GB"
+      },
+      {
+        "title": "ST31500541AS Seagate 1.5-TB 5.9K 3.5 3G SAT HDD",
+        "gold": "1500.0 GB",
+        "fp": "1536GB"
+      },
+      {
+        "title": "257974-B21 HP 1024MB DDR SDRAM DIMM, New 257974-B21 DIMM Wholesale Price 257974-",
+        "gold": "1.024 GB",
+        "fp": "1GB"
+      }
+    ]
+  },
+  "Part Number": {
+    "attribute": "Part Number",
+    "total_gold": 35,
+    "generated": 30,
+    "correct": 30,
+    "missed": 5,
+    "false_positives": 0,
+    "recall": 0.8571428571428571,
+    "precision": 1.0,
+    "candidates_per_gold": 0.8571428571428571,
+    "empty_result_ratio": 0.14285714285714285,
+    "missed_by_type": {
+      "no_pattern_match": [
+        {
+          "title": "HP 70-40262-01 AIT2 Tape Array up to 10 Drives, Drives Wholesale HP Price 70-402",
+          "gold": "704026201",
+          "predicted": [],
+          "type": "no_pattern_match"
+        },
+        {
+          "title": "43X0839 IBM 73.4-GB 15K 2.5 SAS, New 43X0839 SAS 10 Pack Wholesale Price 43X0839",
+          "gold": "43X0839",
+          "predicted": [],
+          "type": "no_pattern_match"
+        }
+      ],
+      "pattern_miss": [
+        {
+          "title": "EG0600FBVFP HP G8 G9 600-GB 6G 10K 2.5 SAS SC, Price EG0600FBVFP-5Pack New EG060",
+          "gold": "EG0600FBVFP",
+          "predicted": [],
+          "type": "pattern_miss"
+        },
+        {
+          "title": "MAX3147RC Fujitsu 146-GB 15K 3.5 SP SAS, New MAX3147RC SAS 2 Pack Wholesale Pric",
+          "gold": "MAX3147RC",
+          "predicted": [],
+          "type": "pattern_miss"
+        }
+      ],
+      "generic_pattern_miss": [
+        {
+          "title": "HT954 Dell 300-GB 10K 3.5 3G SP SAS w/F9541\", Price HT954-5Pack New HT954 w/F954",
+          "gold": "HT954",
+          "predicted": [],
+          "type": "generic_pattern_miss"
+        }
+      ]
+    },
+    "fp_by_pattern": {},
+    "sample_missed": [
+      {
+        "title": "HP 70-40262-01 AIT2 Tape Array up to 10 Drives, Drives Wholesale HP Price 70-402",
+        "gold": "704026201",
+        "predicted": [],
+        "type": "no_pattern_match"
+      },
+      {
+        "title": "EG0600FBVFP HP G8 G9 600-GB 6G 10K 2.5 SAS SC, Price EG0600FBVFP-5Pack New EG060",
+        "gold": "EG0600FBVFP",
+        "predicted": [],
+        "type": "pattern_miss"
+      },
+      {
+        "title": "HT954 Dell 300-GB 10K 3.5 3G SP SAS w/F9541\", Price HT954-5Pack New HT954 w/F954",
+        "gold": "HT954",
+        "predicted": [],
+        "type": "generic_pattern_miss"
+      },
+      {
+        "title": "MAX3147RC Fujitsu 146-GB 15K 3.5 SP SAS, New MAX3147RC SAS 2 Pack Wholesale Pric",
+        "gold": "MAX3147RC",
+        "predicted": [],
+        "type": "pattern_miss"
+      },
+      {
+        "title": "43X0839 IBM 73.4-GB 15K 2.5 SAS, New 43X0839 SAS 10 Pack Wholesale Price 43X0839",
+        "gold": "43X0839",
+        "predicted": [],
+        "type": "no_pattern_match"
+      }
+    ],
+    "sample_fp": []
+  },
+  "Model Number": {
+    "attribute": "Model Number",
+    "total_gold": 10,
+    "generated": 10,
+    "correct": 7,
+    "missed": 3,
+    "false_positives": 3,
+    "recall": 0.7,
+    "precision": 0.7,
+    "candidates_per_gold": 1.0,
+    "empty_result_ratio": 0.0,
+    "missed_by_type": {
+      "alphanumeric_miss": [
+        {
+          "title": "ArtCarved Classic 11-WV591U55-G 11-WV591U55-G Wedding bands | Milanj Diamonds",
+          "gold": "11WV591U55G",
+          "predicted": [
+            "WV591U55"
+          ],
+          "type": "alphanumeric_miss"
+        },
+        {
+          "title": "ArtCarved Contemporary 11-WV03WR85-G 11-WV03WR85-G Wedding bands | Milanj Diamon",
+          "gold": "11WV03WR85G",
+          "predicted": [
+            "WV03WR85"
+          ],
+          "type": "alphanumeric_miss"
+        },
+        {
+          "title": "ArtCarved Classic 31-V324GUW-E Shop ArtCarved 31-V324GUW-E Engagement rings | Ca",
+          "gold": "31V324GUWE",
+          "predicted": [
+            "V324GUW"
+          ],
+          "type": "alphanumeric_miss"
+        }
+      ]
+    },
+    "fp_by_pattern": {
+      "alphanumeric": [
+        {
+          "title": "ArtCarved Classic 11-WV591U55-G 11-WV591U55-G Wedding bands | Milanj Diamonds",
+          "gold": "11WV591U55G",
+          "fp": "WV591U55"
+        },
+        {
+          "title": "ArtCarved Contemporary 11-WV03WR85-G 11-WV03WR85-G Wedding bands | Milanj Diamon",
+          "gold": "11WV03WR85G",
+          "fp": "WV03WR85"
+        },
+        {
+          "title": "ArtCarved Classic 31-V324GUW-E Shop ArtCarved 31-V324GUW-E Engagement rings | Ca",
+          "gold": "31V324GUWE",
+          "fp": "V324GUW"
+        }
+      ]
+    },
+    "sample_missed": [
+      {
+        "title": "ArtCarved Classic 11-WV591U55-G 11-WV591U55-G Wedding bands | Milanj Diamonds",
+        "gold": "11WV591U55G",
+        "predicted": [
+          "WV591U55"
+        ],
+        "type": "alphanumeric_miss"
+      },
+      {
+        "title": "ArtCarved Contemporary 11-WV03WR85-G 11-WV03WR85-G Wedding bands | Milanj Diamon",
+        "gold": "11WV03WR85G",
+        "predicted": [
+          "WV03WR85"
+        ],
+        "type": "alphanumeric_miss"
+      },
+      {
+        "title": "ArtCarved Classic 31-V324GUW-E Shop ArtCarved 31-V324GUW-E Engagement rings | Ca",
+        "gold": "31V324GUWE",
+        "predicted": [
+          "V324GUW"
+        ],
+        "type": "alphanumeric_miss"
+      }
+    ],
+    "sample_fp": [
+      {
+        "title": "ArtCarved Classic 11-WV591U55-G 11-WV591U55-G Wedding bands | Milanj Diamonds",
+        "gold": "11WV591U55G",
+        "fp": "WV591U55"
+      },
+      {
+        "title": "ArtCarved Contemporary 11-WV03WR85-G 11-WV03WR85-G Wedding bands | Milanj Diamon",
+        "gold": "11WV03WR85G",
+        "fp": "WV03WR85"
+      },
+      {
+        "title": "ArtCarved Classic 31-V324GUW-E Shop ArtCarved 31-V324GUW-E Engagement rings | Ca",
+        "gold": "31V324GUWE",
+        "fp": "V324GUW"
+      }
+    ]
+  }
+}

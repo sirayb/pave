@@ -1,0 +1,24 @@
+{
+  "exp_id": "EXP-20260728-150347",
+  "name": "ProductType Fine-tuned (BCEWithLogits)",
+  "phase": "Phase 2.1b",
+  "description": "Trained classifier with weighted loss for imbalance",
+  "timestamp": "2026-07-28T15:03:47.223548",
+  "metrics": {
+    "coverage": 74.6,
+    "accuracy": 0.78,
+    "macro_f1": 0.75,
+    "weighted_f1": 0.81
+  },
+  "config": {
+    "model": "modernbert-mini",
+    "num_classes": 35,
+    "loss": "BCEWithLogitsLoss",
+    "class_weights": "dynamic",
+    "lr": 2e-05,
+    "epochs": 5
+  },
+  "success": true,
+  "notes": "Trained on 977 WDC samples",
+  "end_time": "2026-07-28T15:03:47.223627"
+}

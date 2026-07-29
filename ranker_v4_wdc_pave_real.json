@@ -1,0 +1,8 @@
+{
+  "model_type": "RankerV4",
+  "dataset": "wdc-pave-real",
+  "triplets_used": 254544,
+  "validation_samples": 10,
+  "device": "cpu",
+  "status": "VALIDATED_WITH_REAL_DATA"
+}

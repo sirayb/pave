@@ -1,0 +1,33 @@
+{
+  "exp_id": "EXP-20260728-150446",
+  "name": "ProductType Fine-tuned Classifier",
+  "phase": "Phase 2.1b",
+  "description": "Multi-label classification with weighted loss for imbalance handling",
+  "timestamp": "2026-07-28T15:04:46.338629",
+  "metrics": {
+    "coverage": 74.6,
+    "train_macro_f1": 0.0782656855433085,
+    "test_macro_f1": 0.08236316366323572,
+    "accuracy": 0.08236316366323572,
+    "per_class_f1_mean": 0.08236316366323572,
+    "per_class_f1_std": 0.08211082435924354,
+    "per_class_f1_min": 0.0,
+    "per_class_f1_max": 0.30769230769230765
+  },
+  "config": {
+    "model": "sentence-transformers/mpnet-base-v2 (stub)",
+    "num_classes": 35,
+    "train_samples": 879,
+    "test_samples": 98,
+    "loss": "BCEWithLogitsLoss (weighted)",
+    "class_weights": "dynamic (inverse frequency)",
+    "lr": 2e-05,
+    "epochs": 5,
+    "batch_size": 16,
+    "stratified_split": true,
+    "random_seed": 42
+  },
+  "success": "False",
+  "notes": "Stratified split, weighted BCE loss. Test Macro-F1: 0.082",
+  "end_time": "2026-07-28T15:04:46.342464"
+}

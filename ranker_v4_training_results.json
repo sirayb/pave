@@ -1,0 +1,17 @@
+{
+  "dataset": "wdc-pave-real",
+  "model": "RankerV4-CrossEncoder",
+  "training": {
+    "triplets": 254544,
+    "batch_size": 8,
+    "epochs": 1,
+    "learning_rate": 0.0002,
+    "device": "cpu"
+  },
+  "losses": [
+    0.051354714816282676
+  ],
+  "best_loss": 0.051354714816282676,
+  "final_accuracy": 0.9,
+  "checkpoint": "ranker_v4_final.pt"
+}

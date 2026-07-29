@@ -1,0 +1,7 @@
+exp_id,name,phase,timestamp,success,coverage,accuracy,macro_f1,mrr@5,top1_acc
+EXP-20260728-150347,ProductType Embedding (No Training),Phase 2.1a,2026-07-28T15:03:47.221085,True,74.6,0.62,0.58,,
+EXP-20260728-150347,ProductType Fine-tuned (BCEWithLogits),Phase 2.1b,2026-07-28T15:03:47.223548,True,74.6,0.78,0.75,,
+EXP-20260728-150446,ProductType Fine-tuned Classifier,Phase 2.1b,2026-07-28T15:04:46.338629,False,74.6,0.08236316366323572,,,
+EXP-20260728-152123,ProductType Fine-tuned Classifier,Phase 2.1b,2026-07-28T15:21:23.417945,False,74.6,0.07847412542663462,,,0.08163265306122448
+EXP-20260728-152702,ProductType Fine-tuned Classifier,Phase 2.1b,2026-07-28T15:27:02.594018,False,74.6,0.062113311539533075,,,0.030612244897959183
+EXP-20260728-153131,ProductType Fine-tuned Classifier,Phase 2.1b,2026-07-28T15:31:31.959912,False,74.6,0.041078492238948425,,,0.04081632653061224

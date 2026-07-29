@@ -1,0 +1,43 @@
+{
+  "exp_id": "EXP-20260728-152702",
+  "name": "ProductType Fine-tuned Classifier",
+  "phase": "Phase 2.1b",
+  "description": "Multi-label classification with weighted loss for imbalance handling",
+  "timestamp": "2026-07-28T15:27:02.594018",
+  "metrics": {
+    "coverage": 74.6,
+    "train_macro_f1": 0.05592656184849918,
+    "test_macro_f1": 0.062113311539533075,
+    "weighted_f1": 0.09747505910031702,
+    "top1_accuracy": 0.030612244897959183,
+    "top2_accuracy": 0.05102040816326531,
+    "accuracy": 0.062113311539533075,
+    "per_class_f1_mean": 0.062113311539533075,
+    "per_class_f1_std": 0.0883953350202378,
+    "per_class_f1_min": 0.0,
+    "per_class_f1_max": 0.33333333333333337,
+    "per_class_precision_mean": 0.038514083041925565,
+    "per_class_recall_mean": 0.43702380952380954,
+    "confidence_mean": 0.8202247023582458,
+    "confidence_std": 0.04012081027030945,
+    "train_test_gap": 0.006186749691033895,
+    "critical_classes_fail": 31
+  },
+  "config": {
+    "model": "ModernBERT-base (upper bound)",
+    "num_classes": 35,
+    "train_samples": 879,
+    "test_samples": 98,
+    "loss": "BCEWithLogitsLoss (weighted, multi-label)",
+    "class_weights": "dynamic (inverse frequency)",
+    "lr": 2e-05,
+    "epochs": 5,
+    "batch_size": 16,
+    "stratified_split": true,
+    "early_stopping": "Best Macro-F1 (not validation loss)",
+    "random_seed": 42
+  },
+  "success": "False",
+  "notes": "Macro-F1: 0.062, Weighted: 0.097, Top-1: 0.031, Top-2: 0.051, Critical_Fail: 31, Overfit_Gap: 0.006",
+  "end_time": "2026-07-28T15:29:12.584170"
+}
