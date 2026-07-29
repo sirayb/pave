@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.hf_cache/
+*.pkl
+*.joblib
+
+# Data (too large)
+*.parquet
+wdc_pave_*.json
+step*.json
+phase*.json
+ablation_study_results.json
+category_schemas.json
+learned_*.pkl
+calibrator_*.pkl
+
+# Models
+*.pt
+ranker_*.log
+
+# Logs
+*.log
+error_output.txt

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  pave-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./ranker_v4_best_epoch1.pt:/app/ranker_v4_best_epoch1.pt
+      - ./wdc_pave_test_products.json:/app/wdc_pave_test_products.json
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
