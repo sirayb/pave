@@ -4,6 +4,8 @@
 
 **Status**: ✅ Production ready with 5 categories, 37 attributes, trained on 1,420 real e-commerce products
 
+**Research Foundation**: Built on systematic benchmark analysis, error analysis, and dataset-agnostic architecture research. This system represents the evolution from naive rule-based extraction (18% accuracy) to modular learning-based architecture (90%+ accuracy after data augmentation and candidate ranking). See [PAVE Architecture Report](PAVE_Mimari_Gelisim_Raporu.pdf) for development journey.
+
 ---
 
 ## 🎯 What Is PAVE?
@@ -421,7 +423,16 @@ python -m uvicorn pave.api:app --host 127.0.0.1 --port 8001
 
 ## 🏗️ Architecture: Benchmark Adapter + 4 Research Contributions
 
-PAVE combines **dataset-independent extraction** with **4 novel research contributions**:
+PAVE combines **dataset-independent extraction** with **4 novel research contributions**.
+
+**Research Journey** (documented in detail):
+1. **Initial Discovery**: Systematic benchmarking revealed bottleneck was extraction (18% accuracy), not retrieval
+2. **Architecture Evolution**: From naive BIO token classification → Candidate Generation + Candidate Ranking
+3. **Data Engineering**: Augmentation strategy increased training data 832 → 7,833 samples (9.4x growth)
+4. **Learning Mechanisms**: Introduced Triplet Loss, Hard Negative Mining, Dynamic Router, Fusion Engine
+5. **Dataset Independence**: Separated data layer from model layer for scalability across datasets
+
+Current Architecture:
 
 ```
 [Query] → [Extraction Pipeline] → [CanonicalPrediction]
