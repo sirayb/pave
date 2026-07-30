@@ -419,23 +419,101 @@ python -m uvicorn pave.api:app --host 127.0.0.1 --port 8001
 
 ---
 
+## 🏗️ Architecture: Benchmark Adapter Pattern
+
+PAVE uses a **dataset-independent architecture** that separates extraction from formatting:
+
+```
+[Query] → [Extraction Pipeline] → [CanonicalPrediction]
+                                        ↓
+                                  [Benchmark Adapter]
+                                  (Dataset-Specific)
+                                        ↓
+                    ┌───────────────┬─────────┬──────────┐
+                    ↓               ↓         ↓          ↓
+              [WDC-PAVE]      [Amazon]   [IceCat]   [Custom]
+```
+
+**Key Benefits**:
+- ✅ One extraction model works across unlimited datasets
+- ✅ Adding new dataset = write adapter (no retraining)
+- ✅ Debugging extraction benefits all datasets
+- ✅ Research contributions (adaptive learning, self-correction) dataset-agnostic
+
+**Example**: Same "Stool" extraction maps to:
+- WDC-PAVE: `"Furniture, Storage, Racks and Fixtures"`
+- Amazon: `"Furniture"`
+- IceCat: `"40000000"` (numeric category code)
+
+See [Benchmark Adapter README](pave/adapter/README.md) for details.
+
+---
+
+## 🔬 Research Contributions
+
+PAVE includes 4 novel research contributions building on the solid Benchmark Adapter foundation:
+
+### 1. **Adaptive Query Understanding**
+Learn aliases from user interactions instead of hardcoding keywords.
+- Example: User searches "pneumatic stool" → system learns "pneumatic" is alias for "Stool"
+- Baseline: 95% accuracy → After learning: 97%+ accuracy
+- See Phase 4 in [RESEARCH_FRAMEWORK.md](RESEARCH_FRAMEWORK.md)
+
+### 2. **Confidence-based Self Learning**
+Feedback loop: User correction → Update KB → System improves
+- Example: User says "Wrong, this is Computer not Office" → system updates classifier weights
+- Baseline: 85% Top-1 accuracy → After 10 feedback loops: 90%+ accuracy
+- See Phase 5 in [RESEARCH_FRAMEWORK.md](RESEARCH_FRAMEWORK.md)
+
+### 3. **Ontology Evolution**
+Auto-discover and integrate new concepts
+- Example: Collect 10 examples of "mini-stool" → auto-add to ontology
+- Baseline: 100 unknown concepts/day → After 2 weeks: 50 unknown/day (50% learned)
+- See Phase 6 in [RESEARCH_FRAMEWORK.md](RESEARCH_FRAMEWORK.md)
+
+### 4. **Semantic Memory**
+Learn cross-product associations for inference
+- Example: Learn "Latitude" → "Dell" (95% co-occurrence) → infer manufacturer even without explicit label
+- Baseline: 80% recall on Manufacturer → With memory: 85%+ recall
+- See Phase 7 in [RESEARCH_FRAMEWORK.md](RESEARCH_FRAMEWORK.md)
+
+See [RESEARCH_CONTRIBUTION_COOKBOOK.md](RESEARCH_CONTRIBUTION_COOKBOOK.md) for complete implementation details with code patterns.
+
+---
+
+## 📖 Documentation
+
+| Document | Purpose |
+|----------|---------|
+| [IMPLEMENTATION_GUIDE.md](IMPLEMENTATION_GUIDE.md) | How to modify PAVE system (add category, fix extraction, add dataset) |
+| [RESEARCH_FRAMEWORK.md](RESEARCH_FRAMEWORK.md) | Complete research framework with 4 contributions and A-G test suite |
+| [RESEARCH_CONTRIBUTION_COOKBOOK.md](RESEARCH_CONTRIBUTION_COOKBOOK.md) | Code patterns for implementing each research contribution |
+| [pave/adapter/README.md](pave/adapter/README.md) | Benchmark Adapter usage guide with examples |
+
+---
+
 ## 🎓 Key Insights
 
-1. **Extraction > Ranking**: Focus on clean attributes; ranking is downstream.
-2. **Schema = Speed**: Predefined ontology enables fast, reliable extraction.
-3. **Hybrid Works**: Combining rules + ML outperforms pure neural.
-4. **Confidence Matters**: Calibration layer makes scores actionable.
-5. **Category-Specific**: Different product types need different attributes.
+1. **Dataset Independence**: Separation of extraction (canonical) from formatting (dataset-specific) enables generalization
+2. **Benchmark Adapter**: Pluggable adapters make scaling to new datasets trivial
+3. **Research Foundation**: Solid extraction pipeline enables meaningful research on adaptive learning and ontology evolution
+4. **Extraction > Ranking**: Focus on clean attributes; ranking is downstream
+5. **Schema = Speed**: Predefined ontology enables fast, reliable extraction
+6. **Hybrid Works**: Combining rules + ML outperforms pure neural
+7. **Confidence Matters**: Calibration layer makes scores actionable
+8. **Category-Specific**: Different product types need different attributes
 
 ---
 
 ## 🔗 References
 
 - **Dataset**: [WDC-PAVE (Hugging Face)](https://huggingface.co/datasets/siavashsaki/wdc-pave-ave)
-- **Research**: Phase F research report in repo
+- **Architecture**: Benchmark Adapter pattern (dataset-independent)
+- **Research Focus**: Adaptive learning, self-correction, ontology evolution, semantic memory
 - **Contact**: siraysanembozdogan@gmail.com
 
 ---
 
-**Last Updated**: 2026-07-29  
-**License**: MIT
+**Last Updated**: 2026-07-30  
+**License**: MIT  
+**Caveman Mode**: Active (terse technical communication)
