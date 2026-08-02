@@ -47,7 +47,11 @@ print("TRAINING LOSS COMPARISON")
 print("-"*80)
 
 if baseline_history:
-    baseline_losses = [h.get("loss", 0) for h in baseline_history]
+    # Handle different formats
+    if isinstance(baseline_history, dict) and "losses" in baseline_history:
+        baseline_losses = baseline_history["losses"]
+    else:
+        baseline_losses = [h.get("loss", 0) for h in baseline_history]
     baseline_first = baseline_losses[0]
     baseline_last = baseline_losses[-1]
     baseline_improvement = ((baseline_first - baseline_last) / baseline_first) * 100
