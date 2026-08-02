@@ -1,72 +1,72 @@
 {
   "total": 200,
-  "correct": 106,
-  "accuracy": 0.53,
-  "errors": 94,
-  "error_rate": 0.47,
+  "correct": 103,
+  "accuracy": 0.515,
+  "errors": 97,
+  "error_rate": 0.485,
   "errors_by_difficulty": {
-    "easy": 94
+    "easy": 97
   },
   "worst_errors": [
     {
-      "query": "casa bella fireplace mirror -us",
-      "positive": "Casa Bella Fireplace Mirror -US",
-      "negative": "Pneumatic Lift Lab Stools w/Back, Height-Adjustable, 17-22, Black w/Back by Safc",
-      "pos_score": 0.6039917469024658,
-      "neg_score": 0.7458709478378296,
-      "margin": 0.14187920093536377,
+      "query": "benchmark rings / bands",
+      "positive": "Benchmark Design CF6642010KY CF6642010KY | Diamonds On Wabash",
+      "negative": "Benchmark Diamond CF51413114KR",
+      "pos_score": 0.3899364769458771,
+      "neg_score": 0.4838337004184723,
+      "margin": 0.09389722347259521,
       "difficulty": "easy",
-      "query_len": 31,
-      "pos_len": 31,
-      "neg_len": 112
+      "query_len": 23,
+      "pos_len": 61,
+      "neg_len": 30
     },
     {
-      "query": "513778b21",
-      "positive": "513778-B21 HP Smart Array P711m SAS Controller, Price 513778-B21\" New 513778-B21",
+      "query": "starbucks coffee",
+      "positive": "Starbucks French Roast Dark, K-Cup for Keurig Brewers, Dark Coffee, 54 Count Sta",
+      "negative": "653957-001 HP G8 G9 600-GB 6G 10K 2.5 SAS SC",
+      "pos_score": 0.4883049428462982,
+      "neg_score": 0.5681203603744507,
+      "margin": 0.07981541752815247,
+      "difficulty": "easy",
+      "query_len": 16,
+      "pos_len": 112,
+      "neg_len": 44
+    },
+    {
+      "query": "539843001",
+      "positive": "539843-001 DL585 G6 Opteron 8431 2.4GHz, Price 539843-001\" 2.4GHz Wholesale 5398",
       "negative": "516816-B21 HP 450-GB 6G 15K 3.5 DP SAS 2 Pack",
-      "pos_score": 0.5923007130622864,
-      "neg_score": 0.6948221921920776,
-      "margin": 0.10252147912979126,
+      "pos_score": 0.5110989212989807,
+      "neg_score": 0.5902730226516724,
+      "margin": 0.07917410135269165,
       "difficulty": "easy",
       "query_len": 9,
-      "pos_len": 101,
+      "pos_len": 86,
       "neg_len": 45
     },
     {
-      "query": "ht2518ov9x7",
-      "positive": "Tacori Blooming Beauties HT2518OV9X7\" Shop Tacori HT2518OV9X7 Engagement rings |",
-      "negative": "539843-001 DL585 G6 Opteron 8431 2.4GHz, Price 539843-001\" 2.4GHz Wholesale 5398",
-      "pos_score": 0.5138615965843201,
-      "neg_score": 0.6156384348869324,
-      "margin": 0.1017768383026123,
+      "query": "hewlett-packard snacks and breakfast",
+      "positive": "229402-001 HP Voltage Regulator Board, Price 229402-001\" New 229402-001 Board Wh",
+      "negative": "119826-B21 HP Storageworks RPS",
+      "pos_score": 0.45768430829048157,
+      "neg_score": 0.5338602066040039,
+      "margin": 0.07617589831352234,
       "difficulty": "easy",
-      "query_len": 11,
-      "pos_len": 101,
-      "neg_len": 86
+      "query_len": 36,
+      "pos_len": 87,
+      "neg_len": 30
     },
     {
-      "query": "wedgwood snacks and breakfast",
-      "positive": "Cornucopia Tea Saucer Saucer - Wedgwood | C",
-      "negative": "Jiffylite Self Seal Mailer, #00, 5 x 10, White, 250/Carton Mailer by Sealed Air ",
-      "pos_score": 0.6239051222801208,
-      "neg_score": 0.7154436111450195,
-      "margin": 0.09153848886489868,
+      "query": "hewlett-packard 72.0 GB",
+      "positive": "459512-001 HP 72-GB 3G 10K 2.5 DP SAS, New 459512-001 SAS 10 Pack Wholesale Pric",
+      "negative": "330815-B21 HP SSL1016 DLT1",
+      "pos_score": 0.49572330713272095,
+      "neg_score": 0.5671856999397278,
+      "margin": 0.07146239280700684,
       "difficulty": "easy",
-      "query_len": 29,
-      "pos_len": 43,
-      "neg_len": 109
-    },
-    {
-      "query": "507772s21",
-      "positive": "507772-S21 HP 1-TB 3G 7.2K 3.5 NHP SAT 5 Pack HP 507772-S21 Part# -507772-S21-5P",
-      "negative": "ArtCarved Classic 11-WV591U55-G 11-WV591U55-G Wedding bands | Milanj Diamonds",
-      "pos_score": 0.4750392436981201,
-      "neg_score": 0.5639656782150269,
-      "margin": 0.08892643451690674,
-      "difficulty": "easy",
-      "query_len": 9,
-      "pos_len": 83,
-      "neg_len": 77
+      "query_len": 23,
+      "pos_len": 99,
+      "neg_len": 26
     }
   ]
 }

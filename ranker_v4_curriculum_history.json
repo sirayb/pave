@@ -1,92 +1,92 @@
 [
   {
     "epoch": 0,
-    "loss": 1.3299840688705444,
-    "triplet_loss": 0.6143653713739835,
-    "ranking_loss": 0.7156187158364516,
+    "loss": 1.320802431840163,
+    "triplet_loss": 0.5976875974581792,
+    "ranking_loss": 0.7231148160420932,
     "curriculum_difficulty": "EASY",
     "curriculum_weight": 1.0,
-    "timestamp": "2026-08-02T14:16:53.725789"
+    "timestamp": "2026-08-02T14:22:55.009578"
   },
   {
     "epoch": 1,
-    "loss": 1.3198136549729567,
-    "triplet_loss": 0.6186717565243061,
-    "ranking_loss": 0.7011418846937326,
+    "loss": 1.3447542832447932,
+    "triplet_loss": 0.6249005542351649,
+    "ranking_loss": 0.7198537358870873,
     "curriculum_difficulty": "EASY",
     "curriculum_weight": 1.0,
-    "timestamp": "2026-08-02T14:16:54.157809"
+    "timestamp": "2026-08-02T14:22:55.330523"
   },
   {
     "epoch": 2,
-    "loss": 1.3058327711545503,
-    "triplet_loss": 0.6133854847687942,
-    "ranking_loss": 0.692447290970729,
+    "loss": 1.3234265859310443,
+    "triplet_loss": 0.6126656165489783,
+    "ranking_loss": 0.7107609647970933,
     "curriculum_difficulty": "EASY",
     "curriculum_weight": 1.0,
-    "timestamp": "2026-08-02T14:16:54.572034"
+    "timestamp": "2026-08-02T14:22:55.641391"
   },
   {
     "epoch": 3,
-    "loss": 1.9475188897206233,
-    "triplet_loss": 0.6014039310125204,
-    "ranking_loss": 0.6969419855337876,
+    "loss": 1.9650479555130005,
+    "triplet_loss": 0.6055404612651238,
+    "ranking_loss": 0.704491505256066,
     "curriculum_difficulty": "MEDIUM",
     "curriculum_weight": 1.5,
-    "timestamp": "2026-08-02T14:16:54.991891"
+    "timestamp": "2026-08-02T14:22:55.957691"
   },
   {
     "epoch": 4,
-    "loss": 1.9936095017653246,
-    "triplet_loss": 0.6216836319519923,
-    "ranking_loss": 0.7073893547058105,
+    "loss": 1.947834143271813,
+    "triplet_loss": 0.599383716399853,
+    "ranking_loss": 0.6991723638314468,
     "curriculum_difficulty": "MEDIUM",
     "curriculum_weight": 1.5,
-    "timestamp": "2026-08-02T14:16:55.361984"
+    "timestamp": "2026-08-02T14:22:56.450324"
   },
   {
     "epoch": 5,
-    "loss": 1.9494571318993201,
-    "triplet_loss": 0.6116659068144285,
-    "ranking_loss": 0.6879721788259653,
+    "loss": 1.9790836297548735,
+    "triplet_loss": 0.6139229994553786,
+    "ranking_loss": 0.7054660870478704,
     "curriculum_difficulty": "MEDIUM",
     "curriculum_weight": 1.5,
-    "timestamp": "2026-08-02T14:16:55.745066"
+    "timestamp": "2026-08-02T14:22:56.752416"
   },
   {
     "epoch": 6,
-    "loss": 1.9408110288473277,
-    "triplet_loss": 0.60273565695836,
-    "ranking_loss": 0.691138377556434,
+    "loss": 1.9476344402019794,
+    "triplet_loss": 0.5975454105780675,
+    "ranking_loss": 0.7008775518490717,
     "curriculum_difficulty": "MEDIUM",
     "curriculum_weight": 1.5,
-    "timestamp": "2026-08-02T14:16:56.347398"
+    "timestamp": "2026-08-02T14:22:57.040956"
   },
   {
     "epoch": 7,
-    "loss": 2.6033276594602146,
-    "triplet_loss": 0.6040893747256353,
-    "ranking_loss": 0.697574455004472,
+    "loss": 2.6138183703789344,
+    "triplet_loss": 0.5982936918735504,
+    "ranking_loss": 0.7086154910234305,
     "curriculum_difficulty": "HARD",
     "curriculum_weight": 2.0,
-    "timestamp": "2026-08-02T14:16:56.804585"
+    "timestamp": "2026-08-02T14:22:57.369222"
   },
   {
     "epoch": 8,
-    "loss": 2.6030719647040734,
-    "triplet_loss": 0.6052485979520358,
-    "ranking_loss": 0.6962873798150283,
+    "loss": 2.6103575779841495,
+    "triplet_loss": 0.6046956204451047,
+    "ranking_loss": 0.7004831754244291,
     "curriculum_difficulty": "HARD",
     "curriculum_weight": 2.0,
-    "timestamp": "2026-08-02T14:16:57.131471"
+    "timestamp": "2026-08-02T14:22:57.666753"
   },
   {
     "epoch": 9,
-    "loss": 2.629018710209773,
-    "triplet_loss": 0.6154772341251373,
-    "ranking_loss": 0.6990321095173175,
+    "loss": 2.562673807144165,
+    "triplet_loss": 0.5918900691545926,
+    "ranking_loss": 0.6894468206625718,
     "curriculum_difficulty": "HARD",
     "curriculum_weight": 2.0,
-    "timestamp": "2026-08-02T14:16:57.481749"
+    "timestamp": "2026-08-02T14:22:57.964130"
   }
 ]
