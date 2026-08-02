@@ -37,8 +37,13 @@ else:
 
 # Load data
 print("\nLoading WDC-PAVE triplets...")
-with open("wdc_pave_triplets.json", 'r') as f:
-    triplets = json.load(f)
+try:
+    with open("wdc_pave_triplets.json", 'r') as f:
+        triplets = json.load(f)
+except FileNotFoundError:
+    print("  wdc_pave_triplets.json not found, trying ranker_v4_training_triplets.json...")
+    with open("ranker_v4_training_triplets.json", 'r') as f:
+        triplets = json.load(f)
 
 print(f"Loaded {len(triplets)} triplets")
 
@@ -57,15 +62,24 @@ class TripletDataset(Dataset):
         t = self.triplets[idx]
 
         query = (t["query"] or "")[:self.max_len]
-        pos_title = (t["positive"]["title"] or "")[:self.max_len]
-        neg_title = (t["negative"]["title"] or "")[:self.max_len]
+
+        # Handle both formats
+        if isinstance(t.get("positive"), dict):
+            pos_title = (t["positive"].get("title") or "")[:self.max_len]
+        else:
+            pos_title = (t.get("positive_title") or "")[:self.max_len]
+
+        if isinstance(t.get("negative"), dict):
+            neg_title = (t["negative"].get("title") or "")[:self.max_len]
+        else:
+            neg_title = (t.get("negative_title") or "")[:self.max_len]
 
         return {
             "query": query,
             "positive": pos_title,
             "negative": neg_title,
-            "query_id": t["query_id"],
-            "category": t["category"]
+            "query_id": t.get("query_id", ""),
+            "category": t.get("category", "")
         }
 
 dataset = TripletDataset(triplets)

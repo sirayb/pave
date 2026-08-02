@@ -9,8 +9,15 @@ from pathlib import Path
 import json
 from datetime import datetime
 
-from .curriculum_learning import CurriculumSchedule, HardNegativeMiner
-from .ranker_v4_inference import CrossEncoderRanker
+try:
+    from .curriculum_learning import CurriculumSchedule, HardNegativeMiner
+except ImportError:
+    from curriculum_learning import CurriculumSchedule, HardNegativeMiner
+
+try:
+    from .ranker_v4_inference import CrossEncoderRanker
+except ImportError:
+    pass  # Not needed for training
 
 
 @dataclass
