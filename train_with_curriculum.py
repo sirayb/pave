@@ -143,8 +143,8 @@ print(f"\nModel: RankerV4 (cross-encoder)")
 print(f"Parameters: {sum(p.numel() for p in model.parameters()):,}")
 
 # Training setup
-batch_size = 32 if device.type == "cuda" else 8
-num_epochs = 10 if device.type == "cuda" else 2
+batch_size = 32 if device.type == "cuda" else 16
+num_epochs = 10
 learning_rate = 2e-4
 
 train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=0)

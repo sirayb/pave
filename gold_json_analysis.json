@@ -1,0 +1,85 @@
+{
+  "total_samples": 284,
+  "with_attributes": 284,
+  "coverage": 1.0,
+  "avg_attributes": 4.51056338028169,
+  "categories": 5,
+  "by_category": {
+    "Computers And Accessories": {
+      "total": 87,
+      "with_attributes": 87,
+      "coverage": 100.0,
+      "avg_attrs": 5.505747126436781,
+      "top_attrs": {
+        "Part Number": 86,
+        "Product Type": 84,
+        "Manufacturer": 83,
+        "Interface": 51,
+        "Capacity": 46,
+        "Generation": 36,
+        "Rotational Speed": 35,
+        "Ports": 24,
+        "Processor Type": 13,
+        "Cache": 13
+      }
+    },
+    "Jewelry": {
+      "total": 50,
+      "with_attributes": 50,
+      "coverage": 100.0,
+      "avg_attrs": 2.96,
+      "top_attrs": {
+        "Product Type": 50,
+        "Brand": 50,
+        "Model Number": 48
+      }
+    },
+    "Office Products": {
+      "total": 60,
+      "with_attributes": 60,
+      "coverage": 100.0,
+      "avg_attrs": 5.2,
+      "top_attrs": {
+        "Product Type": 60,
+        "Manufacturer Stock Number": 60,
+        "Color(s)": 52,
+        "Width": 37,
+        "Pack Quantity": 32,
+        "Height": 29,
+        "Retail UPC": 25,
+        "Depth": 7,
+        "Length": 6,
+        "Paper Weight": 4
+      }
+    },
+    "Home And Garden": {
+      "total": 71,
+      "with_attributes": 71,
+      "coverage": 100.0,
+      "avg_attrs": 4.028169014084507,
+      "top_attrs": {
+        "Product Type": 71,
+        "Manufacturer Stock Number": 64,
+        "Width": 49,
+        "Length": 34,
+        "Color": 24,
+        "Height": 24,
+        "Depth": 16,
+        "Retail UPC": 4
+      }
+    },
+    "Grocery And Gourmet Food": {
+      "total": 16,
+      "with_attributes": 16,
+      "coverage": 100.0,
+      "avg_attrs": 3.5,
+      "top_attrs": {
+        "Product Type": 16,
+        "Brand": 16,
+        "Pack Quantity": 9,
+        "Size/Weight": 8,
+        "Retail UPC": 7
+      }
+    }
+  }
+}
